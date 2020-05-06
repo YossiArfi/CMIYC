@@ -1,0 +1,148 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Catch me if you can */
+.catchMe {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.catchMe p {
+    background-color: darkslategrey;
+    margin: 40px 60px;
+    padding: 15px 0px;
+    border: 5px black solid;
+}
+.catchMe .after, .catchMe:hover .before {
+    display : none;
+}
+
+.catchMe:hover .after {
+    display : block;
+}
+
+
+/* line 2 */
+.playground {
+    background-color: black;
+    height: 600px;
+    width: 950px;
+    margin-left: 60px;
+    position: relative;
+}
+.click {
+    background-color: cornflowerblue;
+    color: white;
+    width: 10%;
+    /* animation:spin 2s linear infinite; */
+    cursor: pointer;
+    position: absolute;
+}
+.click{
+    animation-name: none;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.click {
+    padding: 5px 10px;
+    border: 2px black solid;
+    text-align: center;
+}
+
+/* middle page */
+.middlePage {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* side pannel */
+aside {
+    background-color: darkslategray;
+    height: 600px;
+    width: 200px;
+    margin-top: 16px;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+.progression {
+    background-color: lightslategrey;
+    margin: -25px 20px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    position: relative;
+}
+.progression h6 {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    padding-left: 2px;
+    color: white;
+}
+.progression span {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 2px;
+    color: cyan;
+}
+
+
+
+#form input{
+    
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-size: 30px;
+    background-color: cornflowerblue;
+}
+
+#form label{
+    color: cornflowerblue;
+    font-size: 30px; 
+}
+
+
+
+#form{
+    display: none;
+    margin-top: 200px;
+    border: solid cornflowerblue;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#end{
+    font-size: 50px;
+    margin-bottom: 40px;
+    background-color: cornflowerblue;
+}
+#button{
+    width: 200px;
+    height: 40px;
+    background-color: cornflowerblue;
+    font-size: 30px;
+    color: white;
+    display: block;
+    margin: 20px auto;
+}
+
+#button:hover{
+    color: rgb(113, 236, 220);
+}
